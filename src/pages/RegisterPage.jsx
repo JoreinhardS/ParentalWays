@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { RegisterForm } from '../components/RegisterForm';
-import { Logo } from '../components/ui/icons/Logo';
+import { Logo } from '../components/ui/Logo';
 
 function RegisterPage() {
   return (

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { LoginForm } from '../components/LoginForm';
-import { Logo } from '../components/ui/icons/Logo';
+import { Logo } from '../components/ui/Logo';
 
 function LoginPage() {
   return (
