@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Eye, EyeSlash } from 'iconsax-react';
 
-import { cn } from '../../../lib/utils';
 import { FormGroup } from './FormGroup';
+import { cn } from '@/lib/utils';
 
 export function InputPassword({ className, ...rest }) {
   const [show, setShow] = useState(false);

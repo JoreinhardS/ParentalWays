@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 
-export function PrimaryButton({
+export function GhostedButton({
   className,
   style,
   type = 'button',
@@ -10,7 +10,7 @@ export function PrimaryButton({
   return (
     <button
       className={cn(
-        'bg-primary-10 inline-flex items-center justify-center rounded py-2 px-4 text-base font-medium text-white',
+        'inline-flex items-center justify-center py-2 px-[0.625rem] text-base text-black font-semibold',
         className
       )}
       style={style}

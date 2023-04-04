@@ -35,7 +35,13 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx"]
+      },
+      "typescript": {
+        "project": "./jsconfig.json"
       }
+    },
+    "react": {
+      "version": "detect"
     }
   }
 }
