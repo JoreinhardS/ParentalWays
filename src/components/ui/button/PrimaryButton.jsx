@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 
 export function PrimaryButton({
   className,
@@ -9,8 +9,8 @@ export function PrimaryButton({
 }) {
   return (
     <button
-      className={clsx(
-        'bg-primary-10 inline-flex items-center justify-center rounded-lg py-3 text-base font-medium text-white',
+      className={cn(
+        'bg-primary-10 inline-flex items-center justify-center rounded py-2 px-4 text-base font-medium text-white',
         className
       )}
       style={style}
