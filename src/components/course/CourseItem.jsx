@@ -13,7 +13,7 @@ export function CourseItem({
 }) {
   return (
     <div className="flex h-[16.6875rem] w-[36.75rem] gap-x-[1.125rem] rounded-lg border border-[#E0E0E0]">
-      <img src={imageUrl} alt="pre marriage" loading="lazy" />
+      <img src={imageUrl} alt={title} loading="lazy" />
       <div className="flex flex-col justify-between py-4 pr-[1.105rem]">
         <div>
           <div className="flex items-center justify-between">
