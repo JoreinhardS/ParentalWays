@@ -7,8 +7,8 @@ import { navMenu } from '@/lib/data/navigationData';
 
 function Navigation() {
   return (
-    <nav className="flex h-[6.0625rem] items-center px-[3.4375rem]">
-      <div className="container flex items-center justify-between">
+    <nav className="container flex h-[6.0625rem] items-center">
+      <div className="flex w-full items-center justify-between px-[3.4375rem]">
         <Link to="/">
           <Logo />
         </Link>
