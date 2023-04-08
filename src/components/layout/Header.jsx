@@ -33,7 +33,9 @@ function Navigation() {
             <GhostedButton className="text-[1.25rem]">Login</GhostedButton>
           </Link>
           <Link to="/register">
-            <PrimaryButton className="text-[1.25rem]">Sign Up</PrimaryButton>
+            <PrimaryButton className="text-[1.25rem] font-semibold leading-6 shadow-[0_1px_2px_0_rgba(0,0,0,0.12)]">
+              Sign Up
+            </PrimaryButton>
           </Link>
         </div>
       </div>

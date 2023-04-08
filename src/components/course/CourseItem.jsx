@@ -13,8 +13,13 @@ export function CourseItem({
 }) {
   return (
     <div className="flex h-[16.6875rem] w-[36.75rem] gap-x-[1.125rem] rounded-lg border border-[#E0E0E0]">
-      <img src={imageUrl} alt={title} loading="lazy" />
-      <div className="flex flex-col justify-between py-4 pr-[1.105rem]">
+      <img
+        src={imageUrl}
+        alt={title}
+        loading="lazy"
+        className="h-full w-[11.0525rem]"
+      />
+      <div className="flex flex-col justify-between pb-[.6694rem] pr-[1.105rem] pt-4">
         <div>
           <div className="flex items-center justify-between">
             <span className="bg-primary-90 flex h-5 w-[4.4375rem] items-center justify-center rounded-full text-[.625rem] font-normal">
@@ -37,7 +42,7 @@ export function CourseItem({
         </div>
         <div className="mt-auto flex items-center">
           <div className="flex flex-1 flex-col">
-            <span className="text-sm font-normal text-[#999999]">
+            <span className="text-[.7481rem] font-normal leading-none text-[#999999]">
               Start from
             </span>
             <span className="text-lg font-bold text-[#DF7026]">

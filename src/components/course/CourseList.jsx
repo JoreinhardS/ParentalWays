@@ -9,9 +9,15 @@ export function CourseList() {
         <TabsTrigger value="account">All</TabsTrigger>
         <TabsTrigger value="pre-marriage">Pre-marriage</TabsTrigger>
         <TabsTrigger value="parenting">Parenting</TabsTrigger>
-        <TabsTrigger value="education">Education</TabsTrigger>
-        <TabsTrigger value="health">Health</TabsTrigger>
-        <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
+        <TabsTrigger value="education" disabled={true}>
+          Education
+        </TabsTrigger>
+        <TabsTrigger value="health" disabled={true}>
+          Health
+        </TabsTrigger>
+        <TabsTrigger value="nutrition" disabled={true}>
+          Nutrition
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="account">
         <div className="grid grid-cols-2 gap-x-6 gap-y-[1.875rem]">

@@ -10,7 +10,7 @@ export function GhostedButton({
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center py-2 px-[0.625rem] text-base text-black font-semibold',
+        'inline-flex items-center justify-center py-2 px-[.5938rem] text-base text-black font-semibold',
         className
       )}
       style={style}

@@ -26,7 +26,7 @@ export function RelatedArticle() {
                 <figure className="h-[20.375rem] w-[21.75rem]">
                   <img src={imageUrl} alt={title} loading="layz" />
                 </figure>
-                <div className="bg-primary-10 pb-[.375rem] pl-[.625rem] pr-2 pt-6">
+                <div className="bg-primary-10 w-[21.75rem] pb-[.375rem] pl-[.625rem] pr-2 pt-6">
                   <h3 className="text-[1.5rem] font-semibold leading-7 text-[#414141]">
                     {title}
                   </h3>
@@ -57,7 +57,7 @@ const relatedAticle = [
   {
     title: 'Pick the right name for your beloved one',
     author: 'Annetta Helga',
-    imageUrl: '/images/article-1.webp',
+    imageUrl: '/images/related-article-1.webp',
   },
   {
     title: 'Coocking tips : Turns your food into super vitamin',
@@ -72,7 +72,7 @@ const relatedAticle = [
   {
     title: 'Pick the right name for your beloved one',
     author: 'Annetta Helga',
-    imageUrl: '/images/article-1.webp',
+    imageUrl: '/images/related-article-1.webp',
   },
   {
     title: 'Coocking tips : Turns your food into super vitamin',
@@ -87,7 +87,7 @@ const relatedAticle = [
   {
     title: 'Pick the right name for your beloved one',
     author: 'Annetta Helga',
-    imageUrl: '/images/article-1.webp',
+    imageUrl: '/images/related-article-1.webp',
   },
   {
     title: 'Coocking tips : Turns your food into super vitamin',

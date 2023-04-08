@@ -15,7 +15,7 @@ export function InputCheckbox({ className, ...rest }) {
       <CheckboxPrimitive.Indicator
         className={cn('flex items-center justify-center')}
       >
-        <Check className="text-primary-10 h-6 w-6" />
+        <Check />
       </CheckboxPrimitive.Indicator>
     </CheckboxPrimitive.Root>
   );

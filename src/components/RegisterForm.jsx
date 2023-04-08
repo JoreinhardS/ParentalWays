@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import { PrimaryButton } from './ui/button/PrimaryButton';
 import { FormLabel } from './ui/forms/FormLabel';
 import { InputCheckbox } from './ui/forms/InputCheckbox';
@@ -5,8 +7,15 @@ import { InputPassword } from './ui/forms/InputPassword';
 import { InputText } from './ui/forms/InputText';
 
 export function RegisterForm() {
+  const navigate = useNavigate();
+
+  function registerHandler(event) {
+    event.preventDefault();
+    navigate('/login');
+  }
+
   return (
-    <form className="mt-10">
+    <form className="mt-10" onSubmit={registerHandler}>
       <div className="grid grid-cols-2 gap-x-10 gap-y-8">
         <div className="space-y-2">
           <FormLabel htmlFor="firstName">First Name</FormLabel>

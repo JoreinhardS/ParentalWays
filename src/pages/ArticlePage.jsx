@@ -1,3 +1,5 @@
+import { ArrowRight2 } from 'iconsax-react';
+
 import { ArticleAside } from '@/components/article/ArticleAside';
 import { ArticleList } from '@/components/article/ArticleList';
 import { LayoutRoot } from '@/components/layout/LayoutRoot';
@@ -9,7 +11,7 @@ function ArticlePage() {
     <LayoutRoot>
       <section className="mb-[4.875rem]">
         <header className="bg-primary-10 mt-[1.0625rem] flex h-[3.875rem] items-center">
-          <ul className="mx-auto flex w-full max-w-[77.375rem] items-center justify-between">
+          <ul className="relative mx-auto flex w-full max-w-[77.375rem] items-center justify-between">
             <li className="text-xl font-medium text-[#414141]">
               Becoming A Parent
             </li>
@@ -20,6 +22,9 @@ function ArticlePage() {
             </li>
             <li className="text-xl font-medium text-[#414141]">Parenting</li>
             <li className="text-xl font-medium text-[#414141]">Pre-marriage</li>
+            <div className="bg-primary-10 absolute -bottom-7 -right-20 flex h-6 w-6 items-center justify-center">
+              <ArrowRight2 size={24} color="#292D32" />
+            </div>
           </ul>
         </header>
         <div className="container">

@@ -5,8 +5,12 @@ import { InputPassword } from './ui/forms/InputPassword';
 import { InputText } from './ui/forms/InputText';
 
 export function LoginForm() {
+  function LoginHandler(event) {
+    event.preventDefault();
+  }
+
   return (
-    <form className="mt-10">
+    <form className="mt-10" onSubmit={LoginHandler}>
       <div className="space-y-8">
         <div className="space-y-2">
           <FormLabel>Email or Phone Number</FormLabel>

@@ -46,7 +46,7 @@ export function ArticleDetail() {
             <Bookmark size={40} color="none" stroke="#80C2E5" />
           </button>
         </figure>
-        <p className="mt-[3.6875rem] text-lg font-normal text-black">
+        <p className="mt-[3.6875rem] text-justify text-lg font-normal text-black">
           On the odd occasion that I flick through the TV channels, a particular
           infomercial pops up that really gets me riled. I created ‘rant day
           Tuesday’ at The Healthy Eating Hub – a day specifically set aside for
@@ -56,13 +56,13 @@ export function ArticleDetail() {
           not me.
         </p>
         <br />
-        <p className="text-lg font-normal text-black">
+        <p className="text-justify text-lg font-normal text-black">
           “Oh really?!” I say to myself. “A $200 electronic kitchen appliance
           actually adds nutrients (vitamins, minerals and fibre) to food?” I
           pause for effect. “No? I didn’t think so.”
         </p>
         <br />
-        <p className="text-lg font-normal text-black">
+        <p className="text-justify text-lg font-normal text-black">
           Superfoods aren’t made by blenders, nor do you need a nutrition
           extraction system to get the most out of your daily fruit and
           vegetable intake. You have an in-built mechanism in your body to
@@ -70,14 +70,14 @@ export function ArticleDetail() {
           teeth.
         </p>
         <br />
-        <p className="text-lg font-normal text-black">
+        <p className="text-justify text-lg font-normal text-black">
           Please excuse my sarcastic frustration. I’m just tired of seeing
           gimmick after gimmick making false and ridiculous claims about how
           important they are for you to achieve good health, when in reality,
           good health is much simpler than that.
         </p>
         <Callout className="mt-[3.8125rem]" />
-        <p className="mt-[2.0625rem] text-lg font-normal text-black">
+        <p className="mt-[2.0625rem] text-justify text-lg font-normal text-black">
           On the odd occasion that I flick through the TV channels, a particular
           infomercial pops up that really gets me riled. I created ‘rant day
           Tuesday’ at The Healthy Eating Hub – a day specifically set aside for
@@ -87,13 +87,13 @@ export function ArticleDetail() {
           not me.
         </p>
         <br />
-        <p className="text-lg font-normal text-black">
+        <p className="text-justify text-lg font-normal text-black">
           “Oh really?!” I say to myself. “A $200 electronic kitchen appliance
           actually adds nutrients (vitamins, minerals and fibre) to food?” I
           pause for effect. “No? I didn’t think so.”
         </p>
         <br />
-        <p className="text-lg font-normal text-black">
+        <p className="text-justify text-lg font-normal text-black">
           Superfoods aren’t made by blenders, nor do you need a nutrition
           extraction system to get the most out of your daily fruit and
           vegetable intake. You have an in-built mechanism in your body to
@@ -101,7 +101,7 @@ export function ArticleDetail() {
           teeth.
         </p>
         <br />
-        <p className="text-lg font-normal text-black">
+        <p className="text-justify text-lg font-normal text-black">
           Please excuse my sarcastic frustration. I’m just tired of seeing
           gimmick after gimmick making false and ridiculous claims about how
           important they are for you to achieve good health, when in reality,

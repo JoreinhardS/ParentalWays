@@ -3,6 +3,7 @@ import { Profile } from 'iconsax-react';
 
 import { OutlineButton } from '../ui/button/OutlineButton';
 import { toKebabCase } from '@/lib/convertText';
+import { cn } from '@/lib/utils';
 
 export function ArticleItem({ id, tag, title, description, author, imageUrl }) {
   const username = `@${author.toLowerCase().split(' ').join('')}`;
@@ -10,14 +11,20 @@ export function ArticleItem({ id, tag, title, description, author, imageUrl }) {
 
   return (
     <article className="relative flex w-[49.375rem] gap-x-[2.8712rem]">
-      <img
-        src={imageUrl}
-        alt={title}
-        loading="lazy"
-        className="h-[18.7206rem] w-[19.9262rem] rounded-[.625rem]"
-      />
+      <figure className="relative h-[18.7206rem] w-[19.9262rem] shrink-0 overflow-hidden rounded-[.625rem]">
+        <img
+          src={imageUrl}
+          alt={title}
+          loading="lazy"
+          className="absolute inset-0 object-cover"
+        />
+      </figure>
       <div>
-        <OutlineButton>{tag}</OutlineButton>
+        <OutlineButton
+          className={cn(tag === 'Parenting' ? 'px-[.6875rem]' : '')}
+        >
+          {tag}
+        </OutlineButton>
         <h2 className="mt-[1.6619rem] text-[1.6081rem] font-bold leading-[120%] text-[#2B414C]">
           {title}
         </h2>

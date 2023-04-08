@@ -9,7 +9,7 @@ function ArticleDetailPage() {
       <Header />
       <main>
         <section className="mb-[11.125rem]">
-          <div className="mx-auto max-w-[68.25rem]">
+          <div className="mx-auto max-w-[68rem]">
             <ArticleDetail />
             <ArticleReply />
             <RelatedArticle />
