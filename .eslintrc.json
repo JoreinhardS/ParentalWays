@@ -27,6 +27,7 @@
     "import/no-extraneous-dependencies": 2,
     "import/order": "error",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/classnames-order": "error"
   },
@@ -34,7 +35,13 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx"]
+      },
+      "typescript": {
+        "project": "./jsconfig.json"
       }
+    },
+    "react": {
+      "version": "detect"
     }
   }
 }
