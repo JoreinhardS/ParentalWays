@@ -54,7 +54,7 @@ export function RegisterForm() {
       </div>
       <PrimaryButton
         type="submit"
-        className="mt-[3.875rem] w-full rounded-lg py-3"
+        className="mt-[3.875rem] w-full rounded-lg py-3 text-base font-medium"
       >
         Create Account
       </PrimaryButton>

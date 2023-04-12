@@ -32,12 +32,14 @@ export function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen }) {
       </ul>
       <div className="absolute bottom-10 flex flex-col items-center space-y-2">
         <Link to="/register">
-          <PrimaryButton className="px-[33.5px] text-[1.25rem] font-semibold leading-6 shadow-[0_1px_2px_0_rgba(0,0,0,0.12)]">
+          <PrimaryButton className="rounded px-4 py-2 text-[1.25rem] font-semibold leading-6 shadow-[0_1px_2px_0_rgba(0,0,0,0.12)]">
             Sign Up
           </PrimaryButton>
         </Link>
         <Link to="/login">
-          <GhostedButton className="text-[1.25rem]">Login</GhostedButton>
+          <GhostedButton className="px-[.5938rem] py-2 text-[1.25rem] font-semibold">
+            Login
+          </GhostedButton>
         </Link>
       </div>
       <button

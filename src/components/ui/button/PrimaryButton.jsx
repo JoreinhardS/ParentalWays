@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { button } from './utils/variants';
 
 export function PrimaryButton({
   className,
@@ -9,10 +9,7 @@ export function PrimaryButton({
 }) {
   return (
     <button
-      className={cn(
-        'bg-primary-10 inline-flex items-center justify-center rounded py-2 px-4 text-base font-medium text-white',
-        className
-      )}
+      className={button({ variant: 'primary', size: 'md', className })}
       style={style}
       type={type}
       {...rest}

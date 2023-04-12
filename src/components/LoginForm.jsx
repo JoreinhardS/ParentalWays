@@ -31,7 +31,10 @@ export function LoginForm() {
         </FormLabel>
         <p className="text-primary-10 text-base font-normal">Reset Password</p>
       </div>
-      <PrimaryButton type="submit" className="mt-11 w-full rounded-lg py-3">
+      <PrimaryButton
+        type="submit"
+        className="mt-11 w-full rounded-lg py-3 text-base font-medium"
+      >
         Sign in
       </PrimaryButton>
     </form>

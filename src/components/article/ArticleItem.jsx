@@ -19,7 +19,9 @@ export function ArticleItem({ id, tag, title, description, author, imageUrl }) {
         />
       </figure>
       <div>
-        <OutlineButton>{tag}</OutlineButton>
+        <OutlineButton className="h-[1.15rem] rounded px-[.375rem] py-1 text-[.5281rem] font-bold leading-[120%] md:h-[2.0625rem] md:rounded-[.5744rem] md:px-[.875rem] md:py-[.375rem] md:text-sm xl:h-[2.875rem] xl:px-4 xl:py-[.625rem] xl:text-[1.3206rem]">
+          {tag}
+        </OutlineButton>
         <h2 className="mt-[.6644rem] text-[.6431rem] font-bold leading-[120%] text-[#2B414C] md:mt-[.8544rem] md:text-xl xl:mt-[1.6619rem] xl:text-[1.6081rem]">
           {title}
         </h2>
