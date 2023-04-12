@@ -12,7 +12,7 @@ export function CourseItem({
   imageUrl,
 }) {
   return (
-    <div className="flex h-[8.8831rem] max-w-[19.5625rem] flex-row gap-x-[.5881rem] rounded border border-[#E0E0E0] md:h-[22rem] md:max-w-[13.125rem] md:flex-col xl:h-[16.6875rem] xl:max-w-[36.75rem] xl:flex-row xl:gap-x-[1.125rem] xl:rounded-lg">
+    <div className="flex h-[8.8831rem] max-w-[19.5625rem] flex-row gap-x-[.5881rem] overflow-hidden rounded border border-[#E0E0E0] md:h-[22rem] md:max-w-[13.125rem] md:flex-col xl:h-[16.6875rem] xl:max-w-[36.75rem] xl:flex-row xl:gap-x-[1.125rem] xl:rounded-lg">
       <img
         src={imageUrl}
         alt={title}
