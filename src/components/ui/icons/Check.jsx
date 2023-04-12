@@ -1,18 +1,19 @@
-export function Check({ size = 24, color = 'currentColor', className }) {
+export function Check() {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
+      width="10"
+      height="8"
+      viewBox="0 0 10 8"
       fill="none"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <polyline points="20 6 9 17 4 12"></polyline>
+      <path
+        d="M0.75 3.99992L3.58 6.82992L9.25 1.16992"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }

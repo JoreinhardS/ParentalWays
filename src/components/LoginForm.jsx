@@ -5,8 +5,12 @@ import { InputPassword } from './ui/forms/InputPassword';
 import { InputText } from './ui/forms/InputText';
 
 export function LoginForm() {
+  function LoginHandler(event) {
+    event.preventDefault();
+  }
+
   return (
-    <form className="mt-10">
+    <form className="mt-10" onSubmit={LoginHandler}>
       <div className="space-y-8">
         <div className="space-y-2">
           <FormLabel>Email or Phone Number</FormLabel>
@@ -27,7 +31,10 @@ export function LoginForm() {
         </FormLabel>
         <p className="text-primary-10 text-base font-normal">Reset Password</p>
       </div>
-      <PrimaryButton type="submit" className="mt-11 w-full rounded-lg py-3">
+      <PrimaryButton
+        type="submit"
+        className="mt-11 w-full rounded-lg py-3 text-base font-medium"
+      >
         Sign in
       </PrimaryButton>
     </form>

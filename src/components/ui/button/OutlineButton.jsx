@@ -1,6 +1,6 @@
 import { button } from './utils/variants';
 
-export function PrimaryButton({
+export function OutlineButton({
   className,
   style,
   type = 'button',
@@ -9,7 +9,7 @@ export function PrimaryButton({
 }) {
   return (
     <button
-      className={button({ variant: 'primary', size: 'md', className })}
+      className={button({ variant: 'outline', size: 'md', className })}
       style={style}
       type={type}
       {...rest}

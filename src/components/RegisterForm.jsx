@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import { PrimaryButton } from './ui/button/PrimaryButton';
 import { FormLabel } from './ui/forms/FormLabel';
 import { InputCheckbox } from './ui/forms/InputCheckbox';
@@ -5,9 +7,16 @@ import { InputPassword } from './ui/forms/InputPassword';
 import { InputText } from './ui/forms/InputText';
 
 export function RegisterForm() {
+  const navigate = useNavigate();
+
+  function registerHandler(event) {
+    event.preventDefault();
+    navigate('/login');
+  }
+
   return (
-    <form className="mt-10">
-      <div className="grid grid-cols-2 gap-x-10 gap-y-8">
+    <form className="mt-10" onSubmit={registerHandler}>
+      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-8">
         <div className="space-y-2">
           <FormLabel htmlFor="firstName">First Name</FormLabel>
           <InputText type="text" id="firstName" className="text-black-10" />
@@ -45,7 +54,7 @@ export function RegisterForm() {
       </div>
       <PrimaryButton
         type="submit"
-        className="mt-[3.875rem] w-full rounded-lg py-3"
+        className="mt-[3.875rem] w-full rounded-lg py-3 text-base font-medium"
       >
         Create Account
       </PrimaryButton>
