@@ -1,4 +1,4 @@
-export function ChevronDoubleLeft() {
+export function ChevronDoubleLeft({ className }) {
   return (
     <svg
       width="21"
@@ -6,6 +6,7 @@ export function ChevronDoubleLeft() {
       viewBox="0 0 21 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clipPath="url(#clip0_735_6537)">
         <path

@@ -1,68 +1,62 @@
-import { ArrowRight2 } from 'iconsax-react';
-
-import { ArticleAside } from '@/components/article/ArticleAside';
+import { ArticleRecommended } from '@/components/article/ArticleRecommended';
 import { ArticleList } from '@/components/article/ArticleList';
 import { LayoutRoot } from '@/components/layout/LayoutRoot';
-import { ChevronDoubleLeft } from '@/components/ui/icons/ChevronDoubleLeft';
-import { ChevronDoubleRight } from '@/components/ui/icons/ChevronDoubleRight';
+import { ArticleCard } from '@/components/article/ArticleCard';
+import { Pagination } from '@/components/ui/Pagination';
+import { Page } from '@/components/layout/page/Page';
+import { Container } from '@/components/ui/Container';
+import { InternalPageContent } from '@/components/layout/page/InternalPageContent';
+import { InternalPageSection } from '@/components/layout/page/InternalPageSection';
+import { ArticlePageHeader } from '@/components/article/ArticlePageHeader';
 
 function ArticlePage() {
   return (
     <LayoutRoot>
-      <section className="mb-[4.875rem]">
-        <header className="bg-primary-10 mt-[1.0625rem] flex h-[3.875rem] items-center">
-          <ul className="relative mx-auto flex w-full max-w-[77.375rem] items-center justify-between">
-            <li className="text-xl font-medium text-[#414141]">
-              Becoming A Parent
-            </li>
-            <li className="text-xl font-medium text-[#414141]">Education</li>
-            <li className="text-xl font-medium text-[#414141]">Health</li>
-            <li className="text-xl font-medium text-[#414141]">
-              Money Parenting
-            </li>
-            <li className="text-xl font-medium text-[#414141]">Parenting</li>
-            <li className="text-xl font-medium text-[#414141]">Pre-marriage</li>
-            <div className="bg-primary-10 absolute -bottom-7 -right-20 flex h-6 w-6 items-center justify-center">
-              <ArrowRight2 size={24} color="#292D32" />
-            </div>
-          </ul>
-        </header>
-        <div className="container">
-          <div className=" mt-[3.75rem] flex justify-between">
-            <ArticleList />
-            <ArticleAside />
-          </div>
-          <div className="mt-[2.9006rem] flex items-center justify-center space-x-[.6394rem]">
-            <ChevronDoubleLeft />
-            <ol className="flex w-[14.5rem] items-center justify-between">
-              <li className="text-primary-10 text-[1.4919rem] font-medium leading-[120%]">
-                1
-              </li>
-              <li className="text-[1.4919rem] font-medium leading-[120%] text-black">
-                2
-              </li>
-              <li className="text-[1.4919rem] font-medium leading-[120%] text-black">
-                3
-              </li>
-              <li className="text-[1.4919rem] font-medium leading-[120%] text-black">
-                4
-              </li>
-              <li className="text-[1.4919rem] font-medium leading-[120%] text-black">
-                5
-              </li>
-              <li className="text-[1.4919rem] font-medium leading-[120%] text-black">
-                6
-              </li>
-              <li className="text-[1.4919rem] font-medium leading-[120%] text-black">
-                7
-              </li>
-            </ol>
-            <ChevronDoubleRight />
-          </div>
-        </div>
-      </section>
+      <Page className="mb-[4.875rem]">
+        <ArticlePageHeader />
+        <InternalPageContent>
+          <Container className="container">
+            <InternalPageSection className="mt-10 flex flex-wrap justify-between gap-y-10 xl:mt-[3.75rem]">
+              <ArticleList />
+              <ArticleRecommended className="hidden sm:block" />
+            </InternalPageSection>
+            <Pagination className="mt-[23.45px] md:mt-[2.9006rem] " />
+            <InternalPageSection className="mt-[38px] flex gap-x-[4.1875rem] sm:hidden">
+              <div className="space-y-2">
+                {articleCard.map((article, index) => (
+                  <ArticleCard
+                    key={index}
+                    {...article}
+                    className="h-[102.42px] w-[112px]"
+                    style={{ fontSize: '6.67px' }}
+                  />
+                ))}
+              </div>
+              <ArticleRecommended />
+            </InternalPageSection>
+          </Container>
+        </InternalPageContent>
+      </Page>
     </LayoutRoot>
   );
 }
+
+const articleCard = [
+  {
+    title: 'Paternity Leave : Dads, It’s Time to Take-Off!',
+    tag: 'Parenting',
+    imageUrl: '/images/article-of-the-day-1.webp',
+  },
+  {
+    title: "10 Tips for Raising Resilient Children in Today's World",
+    tag: 'Parenting',
+    imageUrl: '/images/article-of-the-day-3.webp',
+  },
+  {
+    title: 'The Science of Sleep: Healthy Habits',
+    tag: 'Sleeping',
+    imageUrl: '/images/article-of-the-day-4.webp',
+  },
+];
 
 export default ArticlePage;

@@ -42,6 +42,12 @@
   button[data-state='checked'] {
     @apply bg-primary-10;
   }
+
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+  }
 }
 
 /* override splide css */
@@ -50,7 +56,10 @@
 }
 
 .splide__pagination {
-  bottom: -0.75rem;
+  bottom: -1.3125rem;
+  @media screen and (min-width: 1280px) {
+    bottom: -0.75rem;
+  }
 }
 
 .splide__pagination__page {

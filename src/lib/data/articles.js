@@ -31,3 +31,36 @@ export const articles = [
     imageUrl: '/images/article-3.webp',
   },
 ];
+
+export const articleOfTheDay = [
+  {
+    title: 'Paternity Leave : Dads, It’s Time to Take-Off!',
+    tag: 'Parenting',
+    imageUrl: '/images/article-of-the-day-1.webp',
+  },
+  {
+    title: "10 Tips for Raising Resilient Children in Today's World",
+    tag: 'Parenting',
+    imageUrl: '/images/article-of-the-day-2.webp',
+  },
+  {
+    title: 'The Science of Sleep: Healthy Habits',
+    tag: 'Sleeping',
+    imageUrl: '/images/article-of-the-day-3.webp',
+  },
+  {
+    title: 'Managing Child Anxiety: Supporting Mental Health',
+    tag: 'Mental',
+    imageUrl: '/images/article-of-the-day-4.webp',
+  },
+  {
+    title: 'Sibling Rivalry: Managing Conflicts',
+    tag: 'Siblings',
+    imageUrl: '/images/article-of-the-day-5.webp',
+  },
+  {
+    title: 'Teaching Empathy: Developing Kindness',
+    tag: 'Parenting',
+    imageUrl: '/images/article-of-the-day-6.webp',
+  },
+];
