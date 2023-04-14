@@ -22,7 +22,7 @@ export function CourseItem({
       <div className="flex h-full flex-col justify-between pb-[.3563rem] pr-[.5881rem] pt-[.5325rem] md:p-2 xl:pb-[.6694rem] xl:pr-[1.105rem] xl:pt-4">
         <div>
           <div className="flex items-center justify-between">
-            <span className="bg-primary-90 flex h-[.6412rem] w-[2.3619rem] items-center justify-center rounded-full text-[.3325rem] font-normal md:h-[1.0625rem] md:w-[3.4375rem] md:text-[.5rem] xl:h-5 xl:w-[4.4375rem] xl:text-[.625rem]">
+            <span className="flex h-[.6412rem] w-[2.3619rem] items-center justify-center rounded-full bg-primary-90 text-[.3325rem] font-normal md:h-[1.0625rem] md:w-[3.4375rem] md:text-[.5rem] xl:h-5 xl:w-[4.4375rem] xl:text-[.625rem]">
               {tag}
             </span>
             <div className="flex items-center space-x-[.3325rem] md:space-x-[.625rem]">

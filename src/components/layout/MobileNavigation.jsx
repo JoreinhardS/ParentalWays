@@ -10,7 +10,7 @@ export function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen }) {
   return (
     <div
       className={cn(
-        'fixed top-0 z-50 h-screen w-[280px] md:w-1/3 bg-white shadow transition-all duration-300 ease-in-out flex flex-col items-center justify-center xl:hidden',
+        'fixed top-0 z-50 flex h-screen w-[280px] flex-col items-center justify-center bg-white shadow transition-all duration-300 ease-in-out md:w-1/3 xl:hidden',
         mobileMenuOpen ? 'right-0' : '-right-full'
       )}
     >

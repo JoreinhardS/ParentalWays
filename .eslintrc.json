@@ -29,7 +29,7 @@
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "tailwindcss/no-custom-classname": "off",
-    "tailwindcss/classnames-order": "error"
+    "tailwindcss/classnames-order": "off"
   },
   "settings": {
     "import/resolver": {
@@ -42,6 +42,9 @@
     },
     "react": {
       "version": "detect"
+    },
+    "tailwindcss": {
+      "callees": ["cn"]
     }
   }
 }

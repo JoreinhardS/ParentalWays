@@ -12,7 +12,7 @@ export function Pagination({ className }) {
     >
       <ChevronDoubleLeft className="h-[9.88px] w-[9.88px] md:h-[20.45px] md:w-[20.45px]" />
       <ol className="flex w-[112px] items-center justify-between md:w-[14.5rem]">
-        <li className="text-primary-10 text-[11.53px] font-medium leading-[120%] md:text-[1.4919rem]">
+        <li className="text-[11.53px] font-medium leading-[120%] text-primary-10 md:text-[1.4919rem]">
           1
         </li>
         <li className="text-[11.53px] font-medium leading-[120%] text-black md:text-[1.4919rem]">

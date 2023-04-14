@@ -4,7 +4,7 @@ export function InputText({ className, type = 'text', ...rest }) {
   return (
     <input
       className={cn(
-        'block w-full text-base border border-[#B6B6B6] rounded-lg outline-none pl-3 py-2 h-[2.625rem]',
+        'block h-[2.625rem] w-full rounded-lg border border-[#B6B6B6] py-2 pl-3 text-base outline-none',
         className
       )}
       type={type}

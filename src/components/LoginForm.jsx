@@ -25,11 +25,11 @@ export function LoginForm() {
         <InputCheckbox id="rememberMe" />
         <FormLabel
           htmlFor="rememberMe"
-          className="text-black-10 ml-3 flex-1 text-base font-normal"
+          className="ml-3 flex-1 text-base font-normal text-black-10"
         >
           Remember me
         </FormLabel>
-        <p className="text-primary-10 text-base font-normal">Reset Password</p>
+        <p className="text-base font-normal text-primary-10">Reset Password</p>
       </div>
       <PrimaryButton
         type="submit"

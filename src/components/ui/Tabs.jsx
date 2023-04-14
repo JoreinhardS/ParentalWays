@@ -8,7 +8,7 @@ const Tabs = TabsPrimitive.Root;
 const TabsList = ({ className, ...props }) => (
   <TabsPrimitive.List
     className={cn(
-      'w-full md:w-[42.125rem] xl:w-[62.5rem] flex flex-wrap items-center justify-center gap-x-[1.7488rem] md:gap-x-[2.3375rem] gap-y-[1.3225rem] xl:gap-x-[3.125rem] border-b md:border-b-0 xl:border-b border-[#C5C5C5] pb-[1.1875rem] md:pb-0 xl:pb-8 mx-auto',
+      'mx-auto flex w-full flex-wrap items-center justify-center gap-x-[1.7488rem] gap-y-[1.3225rem] border-b border-[#C5C5C5] pb-[1.1875rem] md:w-[42.125rem] md:gap-x-[2.3375rem] md:border-b-0 md:pb-0 xl:w-[62.5rem] xl:gap-x-[3.125rem] xl:border-b xl:pb-8',
       className
     )}
     {...props}
@@ -19,7 +19,7 @@ TabsList.displayName = TabsPrimitive.List.displayName;
 const TabsTrigger = ({ className, ...props }) => (
   <TabsPrimitive.Trigger
     className={cn(
-      'text-[#333333] text-[.8044rem] md:text-lg xl:text-xl font-bold data-[state=active]:text-primary-10',
+      'text-[.8044rem] font-bold text-[#333333] data-[state=active]:text-primary-10 md:text-lg xl:text-xl',
       className
     )}
     {...props}

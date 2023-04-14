@@ -20,18 +20,18 @@ function RegisterPage() {
               <Logo />
             </Link>
           </div>
-          <h2 className="text-black-10 text-2xl font-bold">Register</h2>
-          <h3 className="text-black-10 mt-5 text-lg font-medium xl:mt-20">
+          <h2 className="text-2xl font-bold text-black-10">Register</h2>
+          <h3 className="mt-5 text-lg font-medium text-black-10 xl:mt-20">
             Parenting science for a better future
           </h3>
-          <p className="text-neutral-30 mt-1 text-base font-normal">
+          <p className="mt-1 text-base font-normal text-neutral-30">
             Let’s make our children comfortable and better in the family
             environment
           </p>
           <RegisterForm />
           <p className="mt-[0.875rem] text-center text-base font-normal text-[#959595]">
             Already have an account?{' '}
-            <Link to="/login" className="text-primary-30 font-semibold">
+            <Link to="/login" className="font-semibold text-primary-30">
               Log in
             </Link>
           </p>
