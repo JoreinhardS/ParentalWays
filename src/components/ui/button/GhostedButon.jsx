@@ -5,11 +5,12 @@ export function GhostedButton({
   style,
   type = 'button',
   children,
+  size = 'md',
   ...rest
 }) {
   return (
     <button
-      className={button({ variant: 'ghosted', size: 'md', className })}
+      className={button({ variant: 'ghosted', size, className })}
       style={style}
       type={type}
       {...rest}

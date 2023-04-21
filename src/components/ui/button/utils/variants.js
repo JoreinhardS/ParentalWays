@@ -5,6 +5,7 @@ export const button = tv({
   variants: {
     variant: {
       primary: 'bg-primary-10 text-white',
+      secondary: 'bg-white text-primary-10',
       outline: 'bg-transparent border border-primary-10 text-primary-10',
       ghosted: 'bg-transparent text-black',
     },

@@ -1,5 +1,8 @@
+import { nanoid } from 'nanoid';
+
 export const allCourse = [
   {
+    id: nanoid(12),
     title: 'Healthy Relationship',
     creator: 'Prof. Ida Ayu',
     description:
@@ -10,6 +13,7 @@ export const allCourse = [
     imageUrl: '/images/course-1.webp',
   },
   {
+    id: nanoid(12),
     title: 'Communications',
     creator: 'Prof. Sandy Tiyas',
     description:
@@ -20,6 +24,7 @@ export const allCourse = [
     imageUrl: '/images/course-2.webp',
   },
   {
+    id: nanoid(12),
     title: 'Financial Discussion',
     creator: 'Amelia SE.',
     description:
@@ -30,6 +35,7 @@ export const allCourse = [
     imageUrl: '/images/course-3.webp',
   },
   {
+    id: nanoid(12),
     title: 'Planning the Future',
     creator: 'Agus Setiawan',
     description:
@@ -40,6 +46,7 @@ export const allCourse = [
     imageUrl: '/images/course-4.webp',
   },
   {
+    id: nanoid(12),
     title: 'Parent - Kid Relationship',
     creator: 'Ali Amran',
     description:
@@ -50,6 +57,7 @@ export const allCourse = [
     imageUrl: '/images/course-5.webp',
   },
   {
+    id: nanoid(12),
     title: 'Child Support',
     creator: 'Bambang Sutrisno',
     description:
@@ -60,6 +68,7 @@ export const allCourse = [
     imageUrl: '/images/course-6.webp',
   },
   {
+    id: nanoid(12),
     title: 'Parenting Styles',
     creator: 'Desti Anggraini',
     description:
@@ -70,6 +79,7 @@ export const allCourse = [
     imageUrl: '/images/course-7.webp',
   },
   {
+    id: nanoid(12),
     title: 'Kids Health',
     creator: 'Dr. Toni Wahyudin',
     description:

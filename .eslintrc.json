@@ -29,7 +29,7 @@
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "tailwindcss/no-custom-classname": "off",
-    "tailwindcss/classnames-order": "off"
+    "tailwindcss/classnames-order": "warn" // use prettier-plugin-tailwindcss
   },
   "settings": {
     "import/resolver": {
