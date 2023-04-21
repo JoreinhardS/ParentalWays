@@ -5,7 +5,7 @@ export function OurExpertItem({ imageUrl, name, description }) {
   return (
     <div className="flex flex-col items-center gap-10 py-10 md:flex-row md:items-start xl:gap-x-[3.75rem]">
       <figure>
-        <img src={imageUrl} alt={name} />
+        <img src={imageUrl} alt={name} className="h-[400px] w-[300px]" />
       </figure>
       <div className="flex-1">
         <h3 className="text-center text-2xl font-medium text-primary-10 md:text-start xl:text-3xl">
