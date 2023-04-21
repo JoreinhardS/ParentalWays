@@ -12,7 +12,7 @@ const RadioGroupItem = ({ className, ...props }) => {
   return (
     <RadioGroupPrimitive.Item
       className={cn(
-        'h-[14px] w-[14px] shrink-0 rounded-full border-2 border-black-10 text-slate-900 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:h-6 sm:w-6',
+        'h-[14px] w-[14px] shrink-0 rounded-full border-2 border-black-10 text-slate-900 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary-10 sm:h-6 sm:w-6',
         className
       )}
       {...props}
