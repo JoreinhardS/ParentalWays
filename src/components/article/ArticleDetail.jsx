@@ -29,7 +29,7 @@ export function ArticleDetail() {
             <span className="text-[.4469rem] font-normal text-[#2B414C] md:text-sm xl:text-lg">
               16 February 2023
             </span>
-            <div className="bg-primary-10 mx-[1.0625rem] ml-[.2794rem] mr-[.4706rem] h-[.3525rem] w-[.3525rem] rounded-full md:h-[.9375rem] md:w-[.9375rem] xl:ml-[.8125rem] xl:mr-5" />
+            <div className="mx-[1.0625rem] ml-[.2794rem] mr-[.4706rem] h-[.3525rem] w-[.3525rem] rounded-full bg-primary-10 md:h-[.9375rem] md:w-[.9375rem] xl:ml-[.8125rem] xl:mr-5" />
             <span className="text-[.4469rem] font-normal text-[#2B414C] md:text-sm xl:text-lg">
               7 min read
             </span>
@@ -81,7 +81,13 @@ export function ArticleDetail() {
             important they are for you to achieve good health, when in reality,
             good health is much simpler than that.
           </p>
-          <Callout className="mt-[2.125rem] md:mt-[1.875rem] xl:mt-[3.8125rem]" />
+          <Callout className="mt-[2.125rem] md:mt-[1.875rem] xl:mt-[3.8125rem]">
+            <p className="text-justify text-[.9756rem] font-bold text-black md:text-lg">
+              “Oh really?!” I say to myself. “A $200 electronic kitchen
+              appliance actually adds nutrients (vitamins, minerals and fibre)
+              to food?” I pause for effect. “No? I didn’t think so.”
+            </p>
+          </Callout>
           <p className="mt-[1.3125rem] text-justify text-[.9756rem] font-normal text-black md:mt-[1.875rem] md:text-base xl:mt-[2.0625rem] xl:text-lg">
             On the odd occasion that I flick through the TV channels, a
             particular infomercial pops up that really gets me riled. I created

@@ -5,11 +5,12 @@ export function OutlineButton({
   style,
   type = 'button',
   children,
+  size = 'md',
   ...rest
 }) {
   return (
     <button
-      className={button({ variant: 'outline', size: 'md', className })}
+      className={button({ variant: 'outline', size, className })}
       style={style}
       type={type}
       {...rest}

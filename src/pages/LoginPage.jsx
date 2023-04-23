@@ -26,18 +26,18 @@ function LoginPage() {
               <Logo />
             </Link>
           </div>
-          <h2 className="text-black-10 text-2xl font-bold">Login</h2>
-          <h3 className="text-black-10 mt-5 text-lg font-medium xl:mt-20">
+          <h2 className="text-2xl font-bold text-black-10">Login</h2>
+          <h3 className="mt-5 text-lg font-medium text-black-10 xl:mt-20">
             Login to your account
           </h3>
-          <p className="text-neutral-30 mt-1 text-base font-normal">
+          <p className="mt-1 text-base font-normal text-neutral-30">
             Thank you for get back to Parental Ways, let’s access our best
             recommendation for you
           </p>
           <LoginForm />
           <p className="mt-[0.875rem] text-center text-base font-normal text-[#959595]">
             Don’t have an account yet?{' '}
-            <Link to="/register" className="text-primary-30 font-semibold">
+            <Link to="/register" className="font-semibold text-primary-30">
               Join Parental Ways
             </Link>
           </p>

@@ -1,8 +1,13 @@
+import { Link } from 'react-router-dom';
+
 import { PrimaryButton } from '../ui/button/PrimaryButton';
 import { Star } from '../ui/icons/Star';
+import { toKebabCase } from '@/lib/convertText';
 import { currency } from '@/lib/currency';
+import { cn } from '@/lib/utils';
 
 export function CourseItem({
+  id,
   title,
   description,
   creator,
@@ -10,9 +15,17 @@ export function CourseItem({
   tag,
   rating,
   imageUrl,
+  className,
 }) {
+  const href = `${toKebabCase(title)}-${id}`;
+
   return (
-    <div className="flex h-[8.8831rem] max-w-[19.5625rem] flex-row gap-x-[.5881rem] overflow-hidden rounded border border-[#E0E0E0] md:h-[22rem] md:max-w-[13.125rem] md:flex-col xl:h-[16.6875rem] xl:max-w-[36.75rem] xl:flex-row xl:gap-x-[1.125rem] xl:rounded-lg">
+    <div
+      className={cn(
+        'relative flex h-[8.8831rem] max-w-[19.5625rem] flex-row gap-x-[.5881rem] overflow-hidden rounded border border-[#E0E0E0] bg-[#FBFBFB] md:h-[22rem] md:max-w-[13.125rem] md:flex-col xl:h-[16.6875rem] xl:max-w-[36.75rem] xl:flex-row xl:gap-x-[1.125rem] xl:rounded-lg',
+        className
+      )}
+    >
       <img
         src={imageUrl}
         alt={title}
@@ -22,7 +35,7 @@ export function CourseItem({
       <div className="flex h-full flex-col justify-between pb-[.3563rem] pr-[.5881rem] pt-[.5325rem] md:p-2 xl:pb-[.6694rem] xl:pr-[1.105rem] xl:pt-4">
         <div>
           <div className="flex items-center justify-between">
-            <span className="bg-primary-90 flex h-[.6412rem] w-[2.3619rem] items-center justify-center rounded-full text-[.3325rem] font-normal md:h-[1.0625rem] md:w-[3.4375rem] md:text-[.5rem] xl:h-5 xl:w-[4.4375rem] xl:text-[.625rem]">
+            <span className="flex h-[.6412rem] w-[2.3619rem] items-center justify-center rounded-full bg-primary-90 text-[.3325rem] font-normal md:h-[1.0625rem] md:w-[3.4375rem] md:text-[.5rem] xl:h-5 xl:w-[4.4375rem] xl:text-[.625rem]">
               {tag}
             </span>
             <div className="flex items-center space-x-[.3325rem] md:space-x-[.625rem]">
@@ -54,6 +67,10 @@ export function CourseItem({
           </PrimaryButton>
         </div>
       </div>
+
+      {title === 'Healthy Relationship' ? (
+        <Link to={`/course/${href}`} className="absolute inset-0 z-10"></Link>
+      ) : null}
     </div>
   );
 }

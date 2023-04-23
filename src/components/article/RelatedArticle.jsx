@@ -29,7 +29,7 @@ export function RelatedArticle() {
         <SplideTrack className="pb-2">
           {relatedAticle.map(({ title, author, imageUrl }, index) => (
             <SplideSlide key={index}>
-              <div className="inner bg-primary-10 relative flex h-[19.3125rem] w-[12.5rem] items-end xl:h-[29.4375rem] xl:w-[21.75rem]">
+              <div className="inner relative flex h-[19.3125rem] w-[12.5rem] items-end bg-primary-10 xl:h-[29.4375rem] xl:w-[21.75rem]">
                 <img
                   src={imageUrl}
                   alt={title}

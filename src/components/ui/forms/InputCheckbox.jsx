@@ -7,7 +7,7 @@ export function InputCheckbox({ className, ...rest }) {
   return (
     <CheckboxPrimitive.Root
       className={cn(
-        'peer h-6 w-6 shrink-0 rounded-lg border border-primary-10',
+        'peer h-6 w-6 shrink-0 rounded-lg border border-primary-10 data-[state=checked]:bg-primary-10',
         className
       )}
       {...rest}

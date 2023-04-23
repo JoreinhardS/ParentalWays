@@ -10,7 +10,7 @@ export function ArticleReply() {
       </h2>
       <ArticleReplyInput />
       <ul className="mt-[.875rem] md:mt-[2.8125rem] xl:mt-[2.9375rem]">
-        <li className="bg-primary-90 relative rounded px-[.4856rem] md:px-[1.6875rem]">
+        <li className="relative rounded bg-primary-90 px-[.4856rem] md:px-[1.6875rem]">
           <div className="flex space-x-[.43rem] md:space-x-[1.1875rem]">
             <img
               src="/images/gresa-erna.webp"

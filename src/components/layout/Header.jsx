@@ -7,6 +7,7 @@ import { GhostedButton } from '../ui/button/GhostedButon';
 import { PrimaryButton } from '../ui/button/PrimaryButton';
 import { MobileNavigation } from './MobileNavigation';
 import { navMenu } from '@/lib/data/navigationData';
+import { cn } from '@/lib/utils';
 
 function NavigationLinks() {
   return (
@@ -29,13 +30,18 @@ function NavigationLinks() {
   );
 }
 
-export function Header() {
+export function Header({ className }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header>
       <nav className="container flex h-[3.25rem] items-center md:h-20 xl:h-[6.0625rem]">
-        <div className="relative flex w-full items-center justify-between xl:px-[3.4375rem]">
+        <div
+          className={cn(
+            'relative flex w-full items-center justify-between xl:px-[3.4375rem]',
+            className
+          )}
+        >
           <Link to="/" className="mx-auto sm:mx-0">
             <Logo className="h-[1.3388rem] w-[7.125rem] md:h-[1.9375rem] md:w-[10.3125rem]" />
           </Link>

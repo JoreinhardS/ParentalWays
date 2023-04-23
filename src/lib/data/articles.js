@@ -44,14 +44,14 @@ export const articleOfTheDay = [
     imageUrl: '/images/article-of-the-day-2.webp',
   },
   {
-    title: 'The Science of Sleep: Healthy Habits',
-    tag: 'Sleeping',
-    imageUrl: '/images/article-of-the-day-3.webp',
-  },
-  {
     title: 'Managing Child Anxiety: Supporting Mental Health',
     tag: 'Mental',
     imageUrl: '/images/article-of-the-day-4.webp',
+  },
+  {
+    title: 'The Science of Sleep: Healthy Habits',
+    tag: 'Sleeping',
+    imageUrl: '/images/article-of-the-day-3.webp',
   },
   {
     title: 'Sibling Rivalry: Managing Conflicts',

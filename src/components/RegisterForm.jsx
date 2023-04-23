@@ -46,7 +46,7 @@ export function RegisterForm() {
         <InputCheckbox id="terms" />
         <FormLabel
           htmlFor="terms"
-          className="text-black-10 text-base font-normal"
+          className="text-base font-normal text-black-10"
         >
           I accept the <span className="text-primary-30">Terms of Service</span>{' '}
           as well as <span className="text-primary-30">Privacy Policy.</span>
